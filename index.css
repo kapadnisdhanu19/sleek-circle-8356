@@ -1,0 +1,106 @@
+
+body{
+    box-sizing: border-box;
+    font-family: Montserrat,sans-serif;
+}
+nav{
+    border-bottom:solid 1px  rgb(138, 140, 140);
+    display: flex;
+    
+    background-color: white;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px; 
+  
+}
+nav img{
+    width: 150px;
+    margin: auto;
+    height: 35px;
+    margin-left: 100px;
+}
+.cart{
+    font-size: 30px;
+    margin-right: 100px;
+
+}
+nav .btn{
+    background-color:#00b5b7;
+    border: none;
+    border-radius: 4px;
+    height: 35px;
+    width: 100px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin: auto;
+}
+nav .searchbox>input{
+    background-color:#f7f7f7;
+
+    color: rgb(138, 140, 140);
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 50px;
+    border: none;
+    border-radius: 8px;
+    width:500px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+}
+.top{
+    
+    text-align: center;
+    padding: 10px;
+    justify-content:space-between;
+    
+}
+.top>a{
+    margin: 0 20px;
+    color: #1d1d1d;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    
+}
+.top>button{
+    background-color: #fff;
+    border: solid 1px  rgb(138, 140, 140);
+    border-radius: 4px;
+}
+.top>button>i{
+    color: #00b5b7;
+    margin: 0px 5px 0px 0px ;
+}
+.top>button:hover .category{
+    display: block;
+    
+    background-color: white;
+    text-align: left;
+    line-height: 30px;
+}
+.category{
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+
+.sale{
+   text-align: center; 
+   color: #212121;
+   background-color: #effbfc;
+    font: 14px;
+    height:40px;
+    justify-content: space-around;
+    line-height: 38px;
+    margin-top: 0px;
+}
+.carousel {
+    overflow: hidden;
+    margin-right: 10px;
+    height: 400px;
+    
+    
+    position: relative;
+}
