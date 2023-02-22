@@ -1,0 +1,84 @@
+
+body{
+    box-sizing: border-box;
+}
+nav{
+    border-bottom: solid gray;
+    display: flex;
+    
+    background-color: white;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px; 
+  
+}
+nav img{
+    width: 150px;
+    margin: auto;
+    height: 35px;
+    margin-left: 100px;
+}
+.cart{
+    font-size: 30px;
+    margin-right: 100px;
+
+}
+nav .btn{
+    background-color: #00bcd4;
+    border: none;
+    height: 35px;
+    width: 100px;
+    color: white;
+    margin: auto;
+}
+nav .searchbox>input{
+    background-color: rgb(213, 219, 219);
+    color: rgb(94, 95, 95);
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 50px;
+    border: none;
+    width:500px;
+}
+.top{
+    
+    text-align: center;
+    padding: 10px;
+    justify-content:space-between;
+    
+}
+.top>a{
+    margin: 0 20px;
+}
+.top>button:hover .category{
+    display: block;
+    
+    background-color: white;
+    text-align: left;
+    line-height: 30px;
+}
+.category{
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+
+.sale{
+   text-align: center; 
+   color: #212121;
+   background-color: #effbfc;
+    font: 14px;
+    height:40px;
+    justify-content: space-around;
+    line-height: 38px;
+    margin-top: 0px;
+}
+.carousel {
+    overflow: hidden;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 430px;
+    width: 69%;
+    z-index: -10    ;
+    position: relative;
+}
