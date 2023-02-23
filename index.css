@@ -96,11 +96,35 @@ nav .searchbox>input{
     line-height: 38px;
     margin-top: 0px;
 }
+
 .carousel {
     overflow: hidden;
     margin-right: 10px;
-    height: 400px;
-    
+    height: 300px;
     
     position: relative;
+    border-bottom:solid 20px #f7f7f7;
+    border-left:solid 20px #f7f7f7;
+    border-right:solid 20px #f7f7f7;
+}
+
+.cart{
+    border: 2px solid red;
+}
+.product{
+    border: 2px solid green;
+}
+.rating{
+    font-size: 12px;
+    line-height: 24px;
+    background-color: #00b5b7;
+    padding: 0 10px;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+}
+.reviews{ 
+    font-size: 14px;
+    color: #212121;
+  
 }
