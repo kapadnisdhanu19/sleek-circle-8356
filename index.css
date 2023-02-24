@@ -1,11 +1,9 @@
 
 body{
     box-sizing: border-box;
-    font-family: Montserrat,sans-serif;
+
 }
-*{
-    font-family: Montserrat,sans-serif
-}
+
 /* navbar */
 nav{
     border-bottom:solid 1px  rgb(138, 140, 140);
@@ -99,7 +97,7 @@ nav .searchbox>input{
     justify-content: space-around;
     line-height: 38px;
     margin-top: 0px;
-}
+} 
 
 /* carousel */
 .carousel {
@@ -141,12 +139,15 @@ nav .searchbox>input{
 .product{
     
     width: 24%;
+    border-radius: 5px;
+    
 }
 .product .img{
     
     background-color: #f7f7f7;
     display: flex;
     height: 230px;
+    
 
 
 }
@@ -271,6 +272,8 @@ hr{
 }
 .poster{
     width: 24%;
+    overflow: hidden;
+
 }
 .secondcarousel{
     margin: 0 auto;
