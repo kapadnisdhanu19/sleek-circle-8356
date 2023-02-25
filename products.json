@@ -2,76 +2,129 @@
     {   
         "image":"https://img1.hkrtcdn.com/24454/prd_2445300_c_s.jpg",
         "name":"MuscleBlaze Biozyme Iso-Zero, 2 kg (4.4 lb), Low Carb Ice Cream Chocolate",
-        "price":6299
+        "price":6299,
+        "reviews":572,
+        "premium":6110,
+        "rating":4.5
     },
     {
      "image":"https://img9.hkrtcdn.com/24461/prd_2446028_c_s.jpg",
      "name":"MuscleBlaze Super Gainer XXL, 5 kg (11 lb), Chocolate",
-     "price":3799  
+     "price":3799,
+     "reviews":63,
+     "premium":3685,
+     "rating":4.1
     },
     {
      "image":"https://img1.hkrtcdn.com/24436/prd_2443590-MuscleBlaze-Pre-Workout-WrathX-1.1-lb-Fruit-Fury_c_s.jpg",
      "name":"MuscleBlaze Pre Workout WrathX, 500 g (1.1 lb), Fruit Fury", 
-     "price":2049  
+     "price":2049,
+     "reviews":27,
+     "premium":1988,
+     "rating":4.4
     },
     {
      "image":"https://img1.hkrtcdn.com/24436/prd_2443590-MuscleBlaze-Pre-Workout-WrathX-1.1-lb-Fruit-Fury_c_s.jpg",
      "name":"MuscleBlaze Whey Gold Protein, 1 kg (2.2 lb), Rich Milk Chocolate",
-     "price":3999  
+     "price":3999 ,
+     "reviews":42,
+     "premium":3565,
+     "rating":4.2
     },
     {
      "image":"https://img7.hkrtcdn.com/24437/prd_2443606-MuscleBlaze-Whey-Gold-Protein-2.2-lb-Rich-Milk-Chocolate_c_s.jpg",
      "name":"MB Fuel One Whey Protein Immunity+, 1 kg (2.2 lb), Chocolate", 
-     "price":1799  
+     "price":1799,
+     "reviews":47,
+     "premium":1745,
+     "rating":4.1 
     },
     {
      "image":"https://img2.hkrtcdn.com/13488/prd_1348781-MB-Fuel-One-Whey-Protein-Immunity-2.2-lb-Chocolate_c_s.jpg",
      "name":"MuscleBlaze Pre Workout Ripped, 250 g (0.55 lb), Raspberry Lemonade", 
-     "price":1999  
+     "price":1999,
+     "reviews":2,
+     "premium":1939,
+     "rating":4.1  
     },
     {
      "image":"https://img10.hkrtcdn.com/10610/prd_1060999-MuscleBlaze-Pre-Workout-Ripped-0.55-lb-Raspberry-Lemonade_c_s.jpg",
-     "name":"MuscleBlaze Fish Oil (1000 mg) India's Only Labdoor USA Certified for Purity & Accuracy, 60 softgels", 
-     "price":499  
+     "name":"MuscleBlaze Fish Oil (1000 mg) India's Only Labdoor USA Certified for Purity", 
+     "price":499,
+     "reviews":3,
+     "premium":445,
+     "rating":3.9
     },
     {
      "image":"https://img1.hkrtcdn.com/19939/prd_1993850-MuscleBlaze-Fish-Oil-1000-mg-Indias-Only-Labdoor-USA-Certified-for-Purity-Accuracy-60-softgels_c_s.jpg",
      "name":"MuscleBlaze High Protein Oats, 2 kg, Dark Chocolate",
-     "price":1999  
+     "price":1999,
+     "reviews":38,
+     "premium":1850,
+     "rating":4.2
     },
     {
      "image":"https://img1.hkrtcdn.com/21447/prd_2144620-MuscleBlaze-High-Protein-Oats-2-kg-Dark-Chocolate_c_s.jpg",
      "name":"MuscleBlaze Raw Whey Protein Powders, 1 kg (2.2 lb)", 
-     "price":1999 
+     "price":1999,
+     "reviews":58,
+     "premium":1799,
+     "rating":4.1 
     },
     {
         "image":"https://img10.hkrtcdn.com/14847/prd_1484609-MuscleBlaze-Creatine-Monohydrate-Unflavoured-0.55-lb_c_s.jpg",
-        "name":"HealthKart HK Vitals Multivitamin with Multimineral,Taurine & Ginseng Extract, 90 tablet(s)",
-        "price":1099
+        "name":"HealthKart HK Vitals Multivitamin with Multimineral,Taurine",
+        "price":1099,
+        "reviews":62,
+        "premium":989,
+        "rating":3.9
     },
     {
         "image":"https://img3.hkrtcdn.com/21438/prd_2143782-HealthKart-Fish-Oil-60-Softgels-with-Multivitamin-60-vegetarian-tablets-2-PiecesPack_c_s.jpg",
-        "name":"HealthKart Fish Oil 60 Softgels with Multivitamin 60 vegetarian tablets, 2 Piece(s)/Pack",
-        "price":675
+        "name":"HealthKart Fish Oil 60 Softgels with Multivitamin 60 vegetarian tablets",
+        "price":675,
+        "reviews":15,
+        "premium":600,
+        "rating":4.2
     },
     {
         "image":"https://img7.hkrtcdn.com/22783/prd_2278206-GNC-Pro-Performance-100-Whey-Protein-4-lb-Chocolate-Fudge_c_s.jpg",
         "name":"GNC Pro Performance 100% Whey Protein, 1.82 kg (4 lb), Chocolate Fudge",
-        "price":4499
+        "price":4499,
+        "reviews":74,
+        "premium":4349,
+        "rating":4.1 
     },
     {
         "image":"https://img5.hkrtcdn.com/24457/prd_2445644_c_s.jpg",
         "name":"GNC Pro Performance 100% Whey Protein, 1.82 kg (4 lb), Chocolate Fudge",
-        "price":1849
+        "price":1849,
+        "reviews":12,
+        "premium":1749,
+        "rating":3.9
     },
     {
         "image":"https://img7.hkrtcdn.com/20569/prd_2056826-HealthKart-HK-Vitals-Multivitamin-with-MultimineralTaurine-Ginseng-Extract-90-tablets-Unflavoured_c_s.jpg",
-        "name":"HealthKart HK Vitals Multivitamin with Multimineral,Taurine & Ginseng Extract, 90 tablet(s)",
-        "price":574
+        "name":"HealthKart HK Vitals Multivitamin with Multimineral,Taurine",
+        "price":574,
+        "reviews":9,
+        "premium":499,
+        "rating":4.2
     },
     {
         "image":"https://img5.hkrtcdn.com/22712/prd_2271104-HealthKart-HK-Vitals-Biotin-Shampoo-175-ml-with-Red-Onion-Extract_c_s.jpg",
         "name":"HealthKart HK Vitals Biotin Shampoo, 175 ml, with Red Onion Extract",
-        "price":259
+        "price":259,
+        "reviews":26,
+        "premium":239,
+        "rating":4.1 
+    },
+    {
+        "image":"https://img1.hkrtcdn.com/24436/prd_2443590-MuscleBlaze-Pre-Workout-WrathX-1.1-lb-Fruit-Fury_c_s.jpg",
+        "name":"HealthBlaze Pre workout WrathX,1.1 lb Fruit Fury",
+        "price":2049,
+        "reviews":27,
+        "premium":1900,
+        "rating":3.9
     }
 ]

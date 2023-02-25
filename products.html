@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<style>
+
+    /* produvts page css */
+.allproducts>h2{
+    font-size: 25px;
+    color:#1c1c28;
+    margin:10px auto;
+    width: 85%;
+}
+ 
+.pricefilter{
+    text-align: center;
+    justify-content:space-between;
+    background-color: #fff;
+    border: solid 1px  rgb(138, 140, 140);
+    border-radius: 5px;
+    width: 85%;
+    margin: 20px auto;
+    height: 100px;
+    
+}
+
+.product{
+  
+    width: 24%;
+    margin-bottom: 10px;
+}
+.product:hover{
+    box-shadow: #1c1c28;
+}
+.product .img{
+    
+    background-color: #f7f7f7;
+    display: flex;
+    height: 230px;
+
+
+}
+.product .img>img{
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    width: 160px;
+    height: 160px;
+    border-style: none;
+    margin-top: 20px;
+}
+.product .img>a{
+    color: #212121;
+    position: relative;
+    left:260px;
+    margin-top: 5px;
+    font-size: 25px;
+    
+}
+.details{
+    border: 2px solid #f7f7f7 ;
+    border-radius: 2px;
+}
+
+.rating{
+    font-size: 12px;
+    line-height: 24px;
+    background-color: #00b5b7;
+    padding: 0 10px;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    width: 70px;
+    margin-left: 10px;
+}
+.reviews{ 
+    display: flex;
+    
+    align-items: center;
+    
+}
+.reviews>p{
+    font-size: 14px;
+    color: #212121;
+    margin-left: 30px;
+
+}
+.reviews>i{
+    color: green;
+    font-size: 20px;
+    margin-left: 82px;
+}
+.name {
+    font-size: 14px;
+    color: #1c1c28;
+    margin: 10px 5px;
+}
+.premium{
+    background-color: #f7f7f7;
+    margin: 5PX;
+    padding: 7PX 4PX;
+    font-size:14PX ;
+}
+.premium>a{
+    color: #ff8914;
+    padding-right: 5px;
+}
+.premium{
+    color: #1c1c28;
+}
+.addtocart{
+    color:#ff8914 ;
+    background-color: #fff9f4;
+    border-radius: 8px;
+    border: 2px solid #ff8914;
+    padding: 12px 75px;
+    font-size: 15px;
+    font-weight: 200px;
+    margin: 10px;
+    padding-right: 105px;
+}
+.addtocart:hover{
+    color: #fff;
+    background-color: #ff8914;
+}
+.addtocart >i{
+    padding-right: 5px;
+}
+.price{
+    display: flex;
+    height: 35px;
+    align-items: center;
+    margin: 0 10px;
+}
+.price .get{
+    font-size: 18px;
+    color: #1c1c28;
+    margin-right:  11px;
+    font-weight: 600;
+    
+}
+
+.cartdiv{
+
+    width: 85%;
+    justify-content: space-around;
+    display: flex;
+    margin: 40px auto;
+    flex-wrap: wrap;   
+
+}
+
+
+</style>
+<body>
+
+   <!-- navbar -->
+    <nav>
+        <img src="./Health.png" alt="error"/>
+        <div class="searchbox">
+            <input type="search" placeholder="Search for products & brands...">
+        </div>
+        <button class="btn">Login</button>
+       <a class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+    </nav>
+
+    <!-- top -->
+    <div class="top">
+        <button><i class="fa-solid fa-bars"></i> Shop By Category
+        <div class="category">
+            <li>Sports Nutrition</li>
+            <li>Vitamins & Supplements</li>
+            <li>Ayurveda & Herbs</li>
+            <li>Health Food & Drinks</li>
+            <li>FItness</li>
+            <li>Wellness</li>
+        </div>
+        </button>
+        <a><i class="fa-solid fa-tag"></i> Best Sellers</a>
+        <a><i class="fa-solid fa-certificate"></i> Brands</i></a>
+        <a><i class="fa-solid fa-percent"></i> Deals</a>
+        <a><i class="fa-brands fa-blogger-b"></i> Blogs</a>
+        <a><i class="fa-solid fa-gift"></i> Gift Card</a>
+        <a><i class="fa-solid fa-comment-dots"></i> Custom Support</a>
+    </div>
+  <div class="allproducts">
+        <h2>Health Fit Products</h2>
+    </div>
+    <div class="pricefilter">
+        <h3>Price Range</h3>
+        <input type="checkbox"></type>800 And Below
+        <input type="checkbox"></type>801 And 1,500
+        <input type="checkbox"></type>1,501 And 2,200
+        <input type="checkbox"></type>2,221 And 3,000
+        <input type="checkbox"></type>3,001 And 3,801
+        <input type="checkbox"></type>3,801 And Above
+    </div>
+    <hr>
+    <div class="cartdiv">
+
+    </div>
+</body>
+<script>
+       fetch("products.json")
+.then((res) => {
+    return res.json()
+})
+.then((res) => {
+    DisplayData(res)
+    console.log(res)
+})
+
+function DisplayData(data){
+    data.forEach(element => {
+        
+        let card=document.createElement("div")
+        card.classList.add("product")
+
+        card.innerHTML=`
+           <div class="card">
+           <div class="img">
+               <a><i class="fa-regular fa-heart"></i></a>
+               <img src="${element.image}" alt=""></div>
+
+               <!-- reviews -->
+            <div class="details">  
+           <div class="reviews">
+               <button class="rating">${element.rating}<i class="fa-solid fa-star"></i></button>
+           <p>527 reviews</p>
+           <i class="fa-sharp fa-solid fa-circle-dot"></i>
+           </div>
+           <p class="name">${element.name}</p>
+           
+           <!-- price -->
+           <div class="price">
+               
+               <p class="get"><i class="fa-solid fa-indian-rupee-sign"></i>${element.price}</p>
+            
+           </div>
+
+           <!-- premium -->
+           <div class="premium"><a><i class="fa-solid fa-paper-plane"></i></a><i class="fa-solid fa-indian-rupee-sign"></i>${element.premium} for Premium Member</div>
+
+           <!-- addtocart -->
+           <button class="addtocart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+       </div>
+       </div>`
+
+    //     let img=document.createElement("img")
+    //     img.classList.add("img")
+
+    //     let name=document.createElement("p")
+    //     name.classList.add("details")
+
+    //     let btn=document.createElement("button")
+    //     btn.classList.add("rating")
+    //     btn.innerHTML=`4.5<i class="fa-solid fa-star"></i>`
+
+    //     let price=document.createElement("p")
+
+    //    img.src=element.image
+    //    name.textContent=element.name
+    //    price.textContent=`₹${element.price}`
+
+    //    card.append(img,name,btn,price)
+        document.querySelector(".cartdiv").append(card)
+    });
+}
+
+
+</script>
+</html>

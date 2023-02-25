@@ -1,7 +1,15 @@
 
 body{
     box-sizing: border-box;
-
+   
+}
+*{
+    cursor: pointer;
+}
+.carthead>h3>a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #00a856;
 }
 
 /* navbar */
@@ -12,7 +20,8 @@ nav{
     background-color: white;
     justify-content: space-between;
     text-align: center;
-    padding: 10px; 
+    padding: 10px;
+   
   
 }
 nav img{
@@ -61,15 +70,19 @@ nav .searchbox>input{
 .top>a{
     margin: 0 20px;
     color: #1d1d1d;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
-    font-weight: 500;
+    font-weight: 500;   
     
+}
+.top>a:hover{
+    color: #00b5b7;
 }
 .top>button{
     background-color: #fff;
     border: solid 1px  rgb(138, 140, 140);
     border-radius: 4px;
+    font-size: 15px;
 }
 .top>button>i{
     color: #00b5b7;
@@ -139,14 +152,17 @@ nav .searchbox>input{
 .product{
     
     width: 24%;
-    border-radius: 5px;
-    
+
+}
+.product:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .product .img{
     
     background-color: #f7f7f7;
     display: flex;
     height: 230px;
+    
     
 
 
@@ -229,6 +245,11 @@ nav .searchbox>input{
     font-size: 15px;
     font-weight: 200px;
     margin: 10px;
+    padding-right: 105px;
+}
+.addtocart:hover{
+    color: #fff;
+    background-color: #ff8914;
 }
 .addtocart >i{
     padding-right: 5px;
@@ -285,5 +306,11 @@ hr{
     position: relative;
     
     border: none;
+}
+.brandpage{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+
 }
 
