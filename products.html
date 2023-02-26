@@ -16,6 +16,10 @@
 <style>
 
     /* produvts page css */
+
+*{
+    font-family: sans-serif;
+}    
 .allproducts>h2{
     font-size: 25px;
     color:#1c1c28;
@@ -42,6 +46,7 @@
 }
 .product:hover{
     box-shadow: #1c1c28;
+    width: 24%;
 }
 .product .img{
     
@@ -200,17 +205,17 @@
     <div class="pricefilter">
         <h3>Price Range</h3>
         <input type="checkbox" value="800"></type>800 And Below
-        <input type="checkbox"  value="1500"></type>801 And 1,500
-        <input type="checkbox" value="2220"></type>1,501 And 2,200
-        <input type="checkbox" value="3000"></type>2,221 And 3,000
-        <input type="checkbox" value="3800"></type>3,001 And 3,801
-        <input type="checkbox" value="8000"></type>3,801 And Above
+        <input type="checkbox"  value="1500"></type>1,500 And Below
+        <input type="checkbox" value="2220"></type>2,200 And Below
+        <input type="checkbox" value="3000"></type>3,000 And Below
+        <input type="checkbox" value="3800"></type>4,000 And Below
+        <input type="checkbox" value="8000"></type>8000 And Below
     </div>
     <hr>
     <div class="cartdiv">
 
     </div>
-    <footer>Copyright © 2023, HealthFit.com, or its affiliates                          Terms&Conditions  |  Delivery Policy  |  Privacy Policy  |  Disclaimer </footer>
+    <footer>Copyright © 2023, HealthFit.com, or its affiliates  Terms&Conditions  |  Delivery Policy  |  Privacy Policy  |  Disclaimer </footer>
 
 </body>
 <script>
@@ -241,7 +246,7 @@ function DisplayData(data){
             <div class="details">  
            <div class="reviews">
                <button class="rating">${element.rating}<i class="fa-solid fa-star"></i></button>
-           <p>527 reviews</p>
+           <p>${element.reviews} reviews</p>
            <i class="fa-sharp fa-solid fa-circle-dot"></i>
            </div>
            <p class="name">${element.name}</p>
