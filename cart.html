@@ -14,34 +14,68 @@
 
 </head>
 <style>
+    
     .cartnav{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
-   .paymentdiv{
-        display: flex;
-        width: 85%;
+   /* .paymentdiv{
+
+    width: 85%;
+    justify-content: space-between;
+    display: flex;
        
-       margin-top: 20px;
-    }
-    .carthead{
-        width:65%;
-        border: 2px solid yellow;
-        margin-left: 150px;
+    }  */
+     .cartelements{
+        
+     margin-left: 100px;
+     margin-right: 100px;
+     width: 63%;
+     display: grid;
+     grid-template-columns: repeat(3, 300px);
+     grid-gap: 15px;
+
+     
+    
     }
     .payment{
-        border: 2px solid green;
-        width:20%;
-        margin-left: 40px;
+
+        margin-left: 5px;
         margin-right:0;
+        height: 100px;
+        width: 33%;
+        align-items: center;
 
     }
     .paybtn{
         color: white;
+        font-size: 20px;
         background-color:#00b5b7 ;
         border-radius: 4px;
         border: none;
-        padding: 10px;
+        padding: 20px;
+        margin: 10px;
     }
+    .carthead{
+        width: 85%;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 10px;
+    }
+    .card{
+    
+        width: 300px;
+        
+    }
+    .totalamount{
+        font-size: 30px;
+        margin-right: 100px;
+        width: 100%;
+    }
+    .container{
+        display: flex;
+    }
+  
+    
 
 </style>
 
@@ -52,17 +86,115 @@
         <img src="./Health.png" alt="error"/>
         <a class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
     </nav>
-   <div class="paymentdiv">
     <div class="carthead">
         <h2>Shopping Cart</h2>
         <h3>My Wishlist</h3>
       </div>
+      <hr>
+    <div class="container">
+    <div class="cartelements">
+        
+    </div>
     <div class="payment">
         <div class="totalamount">
             <h3>Payble Amount</h3>
+          
         </div>
         <button class="paybtn">Proceed to Pay</button>
     </div>
-   </div>
+    </div>
+
 </body>
+
+<script>
+let data=JSON.parse(localStorage.getItem("cart")) 
+
+data.forEach((element,index) => {
+        
+        let card=document.createElement("div")
+        card.classList.add("product")
+
+        card.innerHTML=`
+           <div class="card">
+           <div class="img">
+               <a><i class="fa-regular fa-heart"></i></a>
+               <img src="${element.image}" alt=""></div>
+
+               <!-- reviews -->
+            <div class="details">  
+           <div class="reviews">
+               <button class="rating">${element.rating}<i class="fa-solid fa-star"></i></button>
+           <p>527 reviews</p>
+           <i class="fa-sharp fa-solid fa-circle-dot"></i>
+           </div>
+           <p class="name">${element.name}</p>
+           
+           <!-- price -->
+           <div class="price">
+               
+               <p class="get"><i class="fa-solid fa-indian-rupee-sign"></i>${element.price}</p>
+            
+           </div>
+
+           <!-- premium -->
+           <div class="premium"><a><i class="fa-solid fa-paper-plane"></i></a><i class="fa-solid fa-indian-rupee-sign"></i>${element.premium} for Premium Member</div>
+
+           <!-- addtocart -->
+         
+       </div>
+       </div>`
+
+       let btn=document.createElement("button")
+       
+       btn.innerText="Remove Item"
+       btn.addEventListener("click", () => {
+                    card.remove()
+                    data.splice(index,1)
+                    localStorage.setItem("cart", JSON.stringify(data))
+                    window.location.reload()
+                })
+    
+       btn.classList.add("addtocart")
+
+
+      
+            
+
+    //     let img=document.createElement("img")
+    //     img.classList.add("img")
+
+    //     let name=document.createElement("p")
+    //     name.classList.add("details")
+
+    //     let btn=document.createElement("button")
+    //     btn.classList.add("rating")
+    //     btn.innerHTML=`4.5<i class="fa-solid fa-star"></i>`
+
+    //     let price=document.createElement("p")
+
+    //    img.src=element.image
+    //    name.textContent=element.name
+    //    price.textContent=`₹${element.price}`
+
+       card.append(btn)
+        document.querySelector(".cartelements").append(card)
+    });
+
+    let sum=0;
+
+    for(let i=0; i<data.length; i++){
+        sum+=data[i].price
+    }
+
+    document.querySelector(".totalamount").textContent="Payble Amount:- "+"₹"+sum;
+
+    document.querySelector(".paybtn").addEventListener("click", ()=>{
+        window.alert("Payment done SUccessfully")
+    })
+
+    document.querySelector(".paybtn").textContent="Proceed to Pay:- "+"₹"+sum;
+
+
+      
+</script>
 </html>

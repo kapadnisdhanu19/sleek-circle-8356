@@ -313,4 +313,11 @@ hr{
     overflow: hidden;
 
 }
+footer{
+    text-align: center;
+    background-color:#212121 ;
+    color:#fff ;
+    margin-top: 20px;
+    padding: 20px;
+}
 

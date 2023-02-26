@@ -158,6 +158,7 @@
     margin: 40px auto;
     flex-wrap: wrap;   
 
+
 }
 
 
@@ -171,7 +172,7 @@
             <input type="search" placeholder="Search for products & brands...">
         </div>
         <button class="btn">Login</button>
-       <a class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+       <a class="cart" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
     </nav>
 
     <!-- top -->
@@ -198,17 +199,19 @@
     </div>
     <div class="pricefilter">
         <h3>Price Range</h3>
-        <input type="checkbox"></type>800 And Below
-        <input type="checkbox"></type>801 And 1,500
-        <input type="checkbox"></type>1,501 And 2,200
-        <input type="checkbox"></type>2,221 And 3,000
-        <input type="checkbox"></type>3,001 And 3,801
-        <input type="checkbox"></type>3,801 And Above
+        <input type="checkbox" value="800"></type>800 And Below
+        <input type="checkbox"  value="1500"></type>801 And 1,500
+        <input type="checkbox" value="2220"></type>1,501 And 2,200
+        <input type="checkbox" value="3000"></type>2,221 And 3,000
+        <input type="checkbox" value="3800"></type>3,001 And 3,801
+        <input type="checkbox" value="8000"></type>3,801 And Above
     </div>
     <hr>
     <div class="cartdiv">
 
     </div>
+    <footer>Copyright © 2023, HealthFit.com, or its affiliates                          Terms&Conditions  |  Delivery Policy  |  Privacy Policy  |  Disclaimer </footer>
+
 </body>
 <script>
        fetch("products.json")
@@ -216,9 +219,11 @@
     return res.json()
 })
 .then((res) => {
-    DisplayData(res)
-    console.log(res)
+    filtering(res)
+    
 })
+
+let cartdata= JSON.parse(localStorage.getItem("cart")) || []
 
 function DisplayData(data){
     data.forEach(element => {
@@ -252,9 +257,28 @@ function DisplayData(data){
            <div class="premium"><a><i class="fa-solid fa-paper-plane"></i></a><i class="fa-solid fa-indian-rupee-sign"></i>${element.premium} for Premium Member</div>
 
            <!-- addtocart -->
-           <button class="addtocart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+    
        </div>
        </div>`
+
+       let btn=document.createElement("button")
+       
+       btn.innerText="Add to Cart"
+    
+       btn.classList.add("addtocart")
+      
+       btn.addEventListener("click", () => {
+        
+        btn.innerText="Added to Cart"
+        btn.style.backgroundColor="#00b5b7"
+        cartdata.push(element)
+
+        localStorage.setItem("cart",JSON.stringify(cartdata))
+
+       })
+
+       card.append(btn)
+            
 
     //     let img=document.createElement("img")
     //     img.classList.add("img")
@@ -275,8 +299,28 @@ function DisplayData(data){
     //    card.append(img,name,btn,price)
         document.querySelector(".cartdiv").append(card)
     });
+
+}
+    function filtering(data){
+        //filter by price
+        let price = document.querySelectorAll(".pricefilter input")
+        for(let i = 0; i < price.length; i++){
+           price[i].addEventListener("change", ()=>{
+            document.querySelector(".cartdiv").innerHTML = "";
+           let pricefilter = data.filter((element)=>{
+                  if(element.price < Number(price[i].value)){
+                    return element
+                  }
+              })
+              DisplayData(pricefilter)
+
+           })
+
+         }
+         DisplayData(data)
 }
 
 
+        
 </script>
 </html>
